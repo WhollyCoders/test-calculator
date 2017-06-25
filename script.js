@@ -38,6 +38,10 @@ function getDisplayValue(){
   return displayArea.innerHTML;
 }
 
+function setInitialValue(initialValue){
+  displayArea.innerHTML = initialValue;
+}
+
 function setDisplayValue(value){
   if(toString(value) > 10){
     value.toPrecision(10);
@@ -81,7 +85,11 @@ function oppositeButtonFunction(){
 }
 
 function percentButtonFunction(){
-  setDisplayValue(parseFloat(getDisplayValue()) / 100);
+  if(getDisplayValue().length <= 10){
+      setDisplayValue(parseFloat(getDisplayValue()) / 100);
+  }else{
+      setDisplayValue(parseFloat(getDisplayValue()).toPrecision(10) / 100);
+  }
 }
 
 function decimalButtonFunction(){

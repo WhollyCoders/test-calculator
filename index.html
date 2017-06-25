@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test Webpage</title>
+    <style media="screen">
+      body{font-family: 'century gothic', arial, sans-serif;}
+      .calculator{width: 177px; border: 1px solid #000; padding: 5px; background-color: #000; border-radius: 10px;}
+      .display-area{text-align: right; border: 1px solid #000; width: 167px; padding-right: 7px; background-color: #fff;}
+      button{width: 40px; background-color: #fff;}
+      #btn-clear{background-color: #f00; color: #fff;}
+      #btn-zero{width: 85px;}
+      .btn-gray{background-color: #aaa; color: #fff;}
+      .btn-darkgray{background-color: #333; color: #fff;}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <div class="display-area">
+          <div id="output" class="display"></div>
+        </div>
+        <div class="button-area">
+          <button id="btn-clear" type="button" name="clear">AC</button>
+          <button id="btn-opposite" type="button" class="btn-gray" name="opposite">+/-</button>
+          <button id="btn-percent" type="button" class="btn-gray" name="percent">%</button>
+          <button type="button" class="btn-darkgray btn-operation" name="division">&divide;</button><br>
+          <button type="button" class="btn-number" name="seven">7</button>
+          <button type="button" class="btn-number" name="eight">8</button>
+          <button type="button" class="btn-number" name="nine">9</button>
+          <button type="button" class="btn-darkgray btn-operation" name="multiplication">x</button><br>
+          <button type="button" class="btn-number" name="four">4</button>
+          <button type="button" class="btn-number" name="five">5</button>
+          <button type="button" class="btn-number" name="six">6</button>
+          <button type="button" class="btn-darkgray btn-operation" name="subtraction">-</button><br>
+          <button type="button" class="btn-number" name="one">1</button>
+          <button type="button" class="btn-number" name="two">2</button>
+          <button type="button" class="btn-number" name="three">3</button>
+          <button type="button" class="btn-darkgray btn-operation" name="addition">+</button><br>
+          <button id="btn-zero" type="button" name="zero">0</button>
+          <button id="btn-decimal" type="button" name="decimal">.</button>
+          <button id="btn-equal" type="button" class="btn-darkgray" name="equal">=</button>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
